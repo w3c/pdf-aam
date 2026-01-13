@@ -389,7 +389,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </p>
 
       <p>
-        This specification defines how PDF user agents (commonly referred to as “PDF processors” in ISO standards for PDF technology) respond to and expose <abbr title="PDF Logical Structure Items">PLSIs</abbr> (structure elements, structure attributes, or property lists associated with marked content, etc., as defined in ISO 32000-2 clauses 14.7–14.9).
+        This specification defines how PDF user agents (commonly referred to as “PDF processors” in ISO standards for PDF technology) respond to and expose
+        <abbr title="PDF Logical Structure Items">PLSIs</abbr> (structure elements, structure attributes, or property lists associated with marked content, etc., as defined in ISO 32000-2 clauses
+        14.7–14.9).
       </p>
 
       <p>
@@ -437,26 +439,29 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
       <section id="general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"><div class="header-wrapper"><h3 id="x4-1-general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"><bdi class="secno">4.1 </bdi>General Rules for Exposing PDF Semantics via HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Semantics</h3><a class="self-link" href="#general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics" aria-label="Permalink for Section 4.1"></a></div>
       <p>
-        Unless indicated otherwise, a <abbr title="PDF Logical Structure Items">PLSI</abbr> with default Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.2 semantics <em class="rfc2119">MUST</em> be exposed to the platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to
-        the relevant <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mappings defined in the
-        <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite> specification. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent semantics to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents
-        <em class="rfc2119">MUST</em> expose such semantic information to the platform for the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics in the Core Accessibility API Mappings 1.2.
+        Unless indicated otherwise, a <abbr title="PDF Logical Structure Items">PLSI</abbr> with default Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.2 semantics <em class="rfc2119">MUST</em> be exposed to the platform
+        accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to the relevant <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mappings defined in the <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite> specification. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent
+        semantics to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents <em class="rfc2119">MUST</em> expose such semantic information to the platform for the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics in the Core
+        Accessibility API Mappings 1.2.
       </p>
       <p>
-        In some cases, features present in a PDF may not map to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role specified in the
-        <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite>. In such cases a relevant HTML Accessibility API Mapping may exist. In those cases, a <abbr title="PDF Logical Structure Item">PLSI</abbr> is mapped to that
-        HTML Accessibility API. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent semantics to an HTML element, but not a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents <em class="rfc2119">MUST</em> expose such semantic information to the platform
-        for HTML accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the <a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a>.
+        In some cases, features present in a PDF may not map to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role specified in the <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite>. In such cases a relevant HTML Accessibility API Mapping may exist. In those cases,
+        a <abbr title="PDF Logical Structure Item">PLSI</abbr> is mapped to that HTML Accessibility API. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent semantics to an HTML element, but not a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents
+        <em class="rfc2119">MUST</em> expose such semantic information to the platform for HTML accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the
+        <a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a>.
       </p>
 
       </section><section id="exposing-plsis-that-do-not-directly-map-to-accessibility-apis"><div class="header-wrapper"><h3 id="x4-2-exposing-plsis-that-do-not-directly-map-to-accessibility-apis"><bdi class="secno">4.2 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Do Not Directly Map to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h3><a class="self-link" href="#exposing-plsis-that-do-not-directly-map-to-accessibility-apis" aria-label="Permalink for Section 4.2"></a></div>
-      <p>Where a <abbr title="PDF Logical Structure Items">PLSI</abbr> does not have any default HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics, the applicable mapping for each platform accessibility API is defined by this specification.</p>
+      <p>
+        Where a <abbr title="PDF Logical Structure Items">PLSI</abbr> does not have any default HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics, the applicable mapping for each platform accessibility API is defined by
+        this specification.
+      </p>
 
       </section><section id="exposing-plsis-that-require-a-minimum-role"><div class="header-wrapper"><h3 id="x4-3-exposing-plsis-that-require-a-minimum-role"><bdi class="secno">4.3 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Require a Minimum Role</h3><a class="self-link" href="#exposing-plsis-that-require-a-minimum-role" aria-label="Permalink for Section 4.3"></a></div>
 
       <p>
-        A minimum role is the equivalent <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role a <abbr title="PDF Logical Structure Item">PLSI</abbr> will map to if the element does not have a more specific implicit role or platform role mappings, e.g., a non-generic
-        role. Minimum roles help ensure that users of assistive technologies get the best possible experience for valid <abbr title="PDF Logical Structure Items">PLSIs</abbr> where otherwise a role would not be exposed.
+        A minimum role is the equivalent <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role a <abbr title="PDF Logical Structure Item">PLSI</abbr> will map to if the element does not have a more specific implicit role or platform role
+        mappings, e.g., a non-generic role. Minimum roles help ensure that users of assistive technologies get the best possible experience for valid <abbr title="PDF Logical Structure Items">PLSIs</abbr> where otherwise a role would not be exposed.
       </p>
 
       <p>A minimum role is provided when all of the following conditions are true:</p>
@@ -480,8 +485,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
       </section><section id="pdf-element-role-mappings"><div class="header-wrapper"><h3 id="x4-4-pdf-element-role-mappings"><bdi class="secno">4.4 </bdi>PDF Element Role Mappings</h3><a class="self-link" href="#pdf-element-role-mappings" aria-label="Permalink for Section 4.4"></a></div>
       <p>
-        <abbr title="PDF Logical Structure Items">PLSIs</abbr> with implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role semantics <em class="rfc2119">MUST</em> be mapped to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to the identified <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role mapping as defined in the
-        <a href="https://www.w3.org/TR/core-aam-1.2/">Core AAM 1.2</a> specification.
+        <abbr title="PDF Logical Structure Items">PLSIs</abbr> with implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role semantics <em class="rfc2119">MUST</em> be mapped to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to the identified <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role mapping as
+        defined in the <a href="https://www.w3.org/TR/core-aam-1.2/">Core AAM 1.2</a> specification.
       </p>
       <p>
         Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> is indicated as having “No corresponding (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) role”, or is mapped to the generic role, user agents <em class="rfc2119">MUST NOT</em> expose the
