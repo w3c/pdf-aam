@@ -1,5 +1,5 @@
-<h4 id="role-table">`Table`</h4>
-<table class="data" aria-labelledby="role-table">
+<h4 id="pdf-table">`Table`</h4>
+<table class="data" aria-labelledby="pdf-table">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -17,8 +17,8 @@
   </tbody>
 </table>
 
-<h4 id="role-tr">`TR`</h4>
-<table class="data" aria-labelledby="role-tr">
+<h4 id="pdf-tr">`TR`</h4>
+<table class="data" aria-labelledby="pdf-tr">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -36,8 +36,8 @@
   </tbody>
 </table>
 
-<h4 id="role-th-scope-column">`TH`</h4>
-<table class="data" aria-labelledby="role-th-scope-column">
+<h4 id="pdf-th-scope-column">`TH` <span class="el-context">(`Scope` = `Column` and `Headers` array not set)</span></h4>
+<table class="data" aria-labelledby="pdf-th-scope-column">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -45,7 +45,7 @@
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="#el-th-columnheader">Role: `th (is a column header or column group header)`</a></td>
+      <td><a class="html-mapping" href="#el-th-columnheader">Role: `th` <span class="el-context">(is a column header or column group header)</span></a></td>
     </tr>
     <tr><th>MSAA + IAccessible2</th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="User Interface Automation">UIA</abbr></th><td>Use WAI-ARIA mapping</td></tr>
@@ -55,8 +55,8 @@
   </tbody>
 </table>
 
-<h4 id="role-th-scope-row">`TH`</h4>
-<table class="data" aria-labelledby="role-th-scope-row">
+<h4 id="pdf-th-scope-row">`TH` <span class="el-context">(`Scope` = `Row` and `Headers` array not set)</span></h4>
+<table class="data" aria-labelledby="pdf-th-scope-row">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -64,7 +64,7 @@
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="#el-th-rowheader">Role: `th (is a row header or row group header)`</a></td>
+      <td><a class="html-mapping" href="#el-th-rowheader">Role: `th` <span class="el-context"> (is a row header or row group header)</span></a></td>
     </tr>
     <tr><th>MSAA + IAccessible2</th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="User Interface Automation">UIA</abbr></th><td>Use WAI-ARIA mapping</td></tr>
@@ -74,27 +74,27 @@
   </tbody>
 </table>
 
-<h4 id="role-th-scope-both">`TH`</h4>
-<table class="data" aria-labelledby="role-th-scope-both">
+<h4 id="pdf-th-scope-both">`TH` <span class="el-context">(`Scope` = `Both` and `Headers` array not set)</span></h4>
+<table class="data" aria-labelledby="pdf-th-scope-both">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
-      <td><a class="core-mapping" href="Use WAI-ARIA mapping">Role: `no analagous ARIA role`</a></td>
+      <td>TBD</td>
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="Use WAI-ARIA mapping">Role: `Note: There is no analagous HTML element. it is either Header or Column`</a></td>
+      <td>TBD</td>
     </tr>
     <tr><th>MSAA + IAccessible2</th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="User Interface Automation">UIA</abbr></th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="macOS Accessibility Protocol">AX API</abbr></th><td>Use WAI-ARIA mapping</td></tr>
-    <tr><th><abbr title="Notes">Notes:</abbr></th><td></td></tr>
+    <tr><th><abbr title="Notes">Notes:</abbr></th><td>Expose the TH to both row and column navigation for cells within the scope</td></tr>
   </tbody>
 </table>
 
-<h4 id="role-th-scope-not-set-headers-array-is-set">`TH`</h4>
-<table class="data" aria-labelledby="role-th-scope-not-set-headers-array-is-set">
+<h4 id="pdf-th-headers-set">`TH` <span class="el-context">(`Scope` is not set and `Headers` array is set)</span></h4>
+<table class="data" aria-labelledby="pdf-th-headers-set">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -102,26 +102,26 @@
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="#el-th">Role: `th Use WAI-ARIA mapping but there are comments`</a></td>
+      <td><a class="html-mapping" href="#el-th">Role: `th`</a></td>
     </tr>
     <tr><th>MSAA + IAccessible2</th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="User Interface Automation">UIA</abbr></th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="macOS Accessibility Protocol">AX API</abbr></th><td>Use WAI-ARIA mapping</td></tr>
-    <tr><th><abbr title="Notes">Notes:</abbr></th><td><span class="property">Note from PDFa: `HTML uses headers array/ IDs for TH and TD  https://www.w3.org/TR/html-aam-1.0/#el-th`</span></td></tr>
+    <tr><th><abbr title="Notes">Notes:</abbr></th><td><span class="property">Note from PDFa: HTML uses `Headers` array / IDs for `TH` and `TD`</span></td></tr>
   </tbody>
 </table>
 
-<h4 id="role-th-scope-both-headers-array-is-set">`TH`</h4>
-<table class="data" aria-labelledby="role-th-scope-both-headers-array-is-set">
+<h4 id="pdf-th-scope-both-headers-set">`TH` <span class="el-context">(`Scope` = `Both` and `Headers` array is set)</span></h4>
+<table class="data" aria-labelledby="pdf-th-scope-both-headers-set">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
-      <td><a class="core-mapping" href="Use WAI-ARIA mapping">Role: `no analagous ARIA role`</a></td>
+      <td>TBD</td>
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="Use WAI-ARIA mapping">Role: `Note: There is no analagous HTML element. it is either Header or Column`</a></td>
+      <td>Use WAI-ARIA mapping</td>
     </tr>
     <tr><th>MSAA + IAccessible2</th><td>Use WAI-ARIA mapping</td></tr>
     <tr><th><abbr title="User Interface Automation">UIA</abbr></th><td>Use WAI-ARIA mapping</td></tr>
@@ -131,8 +131,8 @@
   </tbody>
 </table>
 
-<h4 id="role-td">`TD`</h4>
-<table class="data" aria-labelledby="role-td">
+<h4 id="pdf-td">`TD`</h4>
+<table class="data" aria-labelledby="pdf-td">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -150,8 +150,8 @@
   </tbody>
 </table>
 
-<h4 id="role-thead">`THead`</h4>
-<table class="data" aria-labelledby="role-thead">
+<h4 id="pdf-thead">`THead`</h4>
+<table class="data" aria-labelledby="pdf-thead">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -184,8 +184,8 @@
   </tbody>
 </table>
 
-<h4 id="role-tbody">`TBody`</h4>
-<table class="data" aria-labelledby="role-tbody">
+<h4 id="pdf-tbody">`TBody`</h4>
+<table class="data" aria-labelledby="pdf-tbody">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -218,8 +218,8 @@
   </tbody>
 </table>
 
-<h4 id="role-tfoot">`TFoot`</h4>
-<table class="data" aria-labelledby="role-tfoot">
+<h4 id="pdf-tfoot">`TFoot`</h4>
+<table class="data" aria-labelledby="pdf-tfoot">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -253,8 +253,8 @@
 </table>
 
 
-<h4 id="role-caption-child-of-a-table">`Caption`</h4>
-<table class="data" aria-labelledby="role-caption-child-of-a-table">
+<h4 id="pdf-caption-table">`Caption` <span class="el-context">(child of `Table`)</span></h4>
+<table class="data" aria-labelledby="pdf-caption-table">
   <tbody>
     <tr>
       <th>ARIA Specification</th>
@@ -262,7 +262,7 @@
     </tr>
     <tr>
       <th>Analogous HTML Element</th>
-      <td><a class="html-mapping" href="#el-caption">Role: `caption  HTML-AAM says to Use WAI-ARIA mapping but there is also other "stuff" there.`</a></td>
+      <td>Use WAI-ARIA mapping</td>
     </tr>
     <tr>
       <th>MSAA + IAccessible2</th>
@@ -282,7 +282,7 @@
     </tr>
     <tr>
       <th><abbr title="Notes">Notes:</abbr></th>
-      <td><span class="property">Note from PDFa: `If a descendant of a table, the first instance of a caption element will provide the table its accessible name.`</span></td>
+      <td><span class="property">Note from PDFa: If a descendant of a `Table`, the first instance of a `Caption` will provide the `Table` its accessible name.</span></td>
     </tr>
   </tbody>
 </table>
