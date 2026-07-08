@@ -1,6 +1,10 @@
-<h4 id="pdf-figure-block-alt">`Figure` <span class="el-context">(Block-level and Contains substructure (ex. `Caption`) - `Alt` is present  From our `AAM` meeting... We may have to have separate `AAM` tables depending on what the nested substructure is.   From the `AAM` meeting... we need to provide some specific examples so the `W3C` folks can advise.)</span></h4>
+<h4 id="pdf-figure-block-alt">`Figure` <span class="el-context">(Placement; Block-level and Contains substructure (ex. `Caption`) - `Alt` is present  From our `AAM` meeting... We may have to have separate `AAM` tables depending on what the nested substructure is.   From the `AAM` meeting... we need to provide some specific examples so the `W3C` folks can advise.)</span></h4>
 <table class="data" aria-labelledby="pdf-figure-block-alt">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-figure">Role: `figure`</a></td>
@@ -38,6 +42,10 @@
 <table class="data" aria-labelledby="pdf-figure-block-actualtext">
   <tbody>
     <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
+    <tr>
       <th>ARIA Specification</th>
       <td>See notes</td>
     </tr>
@@ -73,6 +81,10 @@
 <h4 id="pdf-figure-block">`Figure` <span class="el-context">(Block-level and Contains substructure - `Alt` or `ActualText` is empty or not present)</span></h4>
 <table class="data" aria-labelledby="pdf-figure-block">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-figure">Role: `figure`</a></td>
@@ -110,6 +122,10 @@
 <table class="data" aria-labelledby="pdf-figure-inline-alt">
   <tbody>
     <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
+    <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-image">Role: `image`</a></td>
     </tr>
@@ -145,6 +161,10 @@
 <h4 id="pdf-figure-inline-actualtext">`Figure` <span class="el-context">(Inline - contains image(s) and/or text (including line art, etc.) and `ActualText` is present)</span></h4>
 <table class="data" aria-labelledby="pdf-figure-inline-actualtext">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td>See notes</td>
@@ -182,6 +202,10 @@
 <table class="data" aria-labelledby="pdf-figure-inline-alt-actualtext">
   <tbody>
     <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
+    <tr>
       <th>ARIA Specification</th>
       <td>See notes</td>
     </tr>
@@ -217,6 +241,10 @@
 <h4 id="pdf-figure-image">`Figure` <span class="el-context">(`Alt` text and `ActualText` are both empty or not present and only an image is present.)</span></h4>
 <table class="data" aria-labelledby="pdf-figure-image">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-image">Role: `image`</a></td>
@@ -254,6 +282,10 @@
 <table class="data" aria-labelledby="pdf-figure-text">
   <tbody>
     <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 373</td>
+    </tr>
+    <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-paragraph">Role: `paragraph`</a></td>
     </tr>
@@ -286,9 +318,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-caption-figure">`Caption` <span class="el-context">(`Caption` (if child of Figure))</span></h4>
+<h4 id="pdf-caption-figure">`Caption` <span class="el-context">(child of a Figure)</span></h4>
 <table class="data" aria-labelledby="pdf-caption-figure">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 372</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td>Use WAI-ARIA mapping</td>
@@ -322,9 +358,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-formula-mathml">`Formula` <span class="el-context">(Contains a math element as a child AND the AT can handle `MathML`)</span></h4>
+<h4 id="pdf-formula-mathml">`Formula` <span class="el-context">(Contains a math element as a child)</span></h4>
 <table class="data" aria-labelledby="pdf-formula-mathml">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 374</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-generic">Role: `generic`</a></td>
@@ -358,9 +398,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-formula-mathml-af">`Formula` <span class="el-context">(`MathML` is not present  BUT  Contains Associated File with `AFRelationship` Supplement and when `Subtype` = `MathML` OR AT cannot handle `MathML` AND AT can handle Associated Files)</span></h4>
+<h4 id="pdf-formula-mathml-af">`Formula` <span class="el-context">(`MathML` is not present  BUT  Contains Associated File with `AFRelationship` Supplement and when `Subtype` = `MathML`)</span></h4>
 <table class="data" aria-labelledby="pdf-formula-mathml-af">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 374</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-generic">Role: `generic`</a></td>
@@ -394,9 +438,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-formula">`Formula` <span class="el-context">(`MathML` and Associated Files are not present  AND `Alt` (or `ActualText`) is present OR AT cannot handle them)</span></h4>
-<table class="data" aria-labelledby="pdf-formula">
+<h4 id="pdf-formula-alt">`Formula` <span class="el-context">(`MathML` and Associated Files are not present  AND `Alt` (or `ActualText`) is present)</span></h4>
+<table class="data" aria-labelledby="pdf-formula-alt">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 374</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-figure">Role: `figure`</a></td>
@@ -430,9 +478,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-formula-2">`Formula` <span class="el-context">(No `MathML`, no Associated File, no `Alt` (or `ActualText`))</span></h4>
-<table class="data" aria-labelledby="pdf-formula-2">
+<h4 id="pdf-formula-no-alt">`Formula` <span class="el-context">(No `MathML`, no Associated File, no `Alt` (or `ActualText`))</span></h4>
+<table class="data" aria-labelledby="pdf-formula-no-alt">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 374</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-paragraph">Role: `paragraph`</a></td>
@@ -470,6 +522,10 @@
 <table class="data" aria-labelledby="pdf-mathml">
   <tbody>
     <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 374</td>
+    </tr>
+    <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-math">Role: `math`</a></td>
     </tr>
@@ -502,9 +558,13 @@
   </tbody>
 </table>
 
-<h4 id="role-content-of-the-associated-file-mathml-associated-file">`Content of the Associated File` <span class="el-context">(Associated File with `AFRelationship` Supplement and when `Subtype` = `MathML`)</span></h4>
-<table class="data" aria-labelledby="role-content-of-the-associated-file-mathml-associated-file">
+<h4 id="pdf-content-of-the-associated-file-mathml-associated-file">`Content of the Associated File` <span class="el-context">(Associated File with `AFRelationship` Supplement and when `Subtype` = `MathML`)</span></h4>
+<table class="data" aria-labelledby="pdf-content-of-the-associated-file-mathml-associated-file">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 355</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td><a class="core-mapping" href="#role-map-math">Role: `math`</a></td>
@@ -538,9 +598,13 @@
   </tbody>
 </table>
 
-<h4 id="pdf-caption-formula">`Caption` <span class="el-context">(Child of a Formula)</span></h4>
+<h4 id="pdf-caption-formula">`Caption` <span class="el-context">(child of a Formula)</span></h4>
 <table class="data" aria-labelledby="pdf-caption-formula">
   <tbody>
+    <tr>
+      <th>PDF Specification</th>
+      <td>ISO 32000-2:2020, 14.8.4, Standard structure types, Table 372</td>
+    </tr>
     <tr>
       <th>ARIA Specification</th>
       <td>Use WAI-ARIA mapping</td>
