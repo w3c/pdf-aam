@@ -1,21 +1,9 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta name="generator" content="ReSpec 35.4.3">
+<meta name="generator" content="ReSpec 35.9.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="refResh" content="0; url=https://w3c.github.io/aria/pdf-aam/" />
-<style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
+<meta http-equiv="Refresh" content="0; 
+  url=https://w3c.github.io/aria/pdf-aam/" />
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -87,6 +75,7 @@ dd{margin-left:0}
     
     
     
+    
 
     
   
@@ -118,12 +107,14 @@ var[data-type]::after{content:attr(data-type);transform:translateX(-50%) transla
 var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </style>
 <script id="initialUserConfig" type="application/json">{
-  "github": "w3c/pdf-aam",
+  "github": {
+    "repoURL": "w3c/pdf-aam",
+    "pullsURL": "https://github.com/w3c/aria/pulls?q=is%3Apr+is%3Aopen+label%3A%22spec%3Apdf-aam%22",
+    "commitHistoryURL": "https://github.com/w3c/aria/commits/main/pdf-aam/"
+  },
   "doJsonLd": true,
   "lint": true,
   "specStatus": "ED",
-  "crEnd": "2023-01-02",
-  "implementationReportURI": "https://w3c.github.io/test-results/core-aam-1.2/",
   "shortName": "pdf-aam-1.0",
   "copyrightStart": "2024",
   "edDraftURI": "https://w3c.github.io/pdf-aam/",
@@ -146,12 +137,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     {
       "name": "Paul Rayius",
       "company": "Allyant",
-      "companyURL": "https://www.allyant.com"
+      "companyURL": "https://www.allyant.com",
+      "w3cid": "159294"
     },
     {
       "name": "Zak Kinsey",
-      "company": "Target Stream",
-      "companyURL": "https://www.targetstream.com"
+      "company": "TargetStream",
+      "companyURL": "https://www.targetstream.com",
+      "w3cid": "160220"
     },
     {
       "name": "James Craig",
@@ -163,18 +156,60 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "aria",
   "tocIntroductory": true,
   "ariaSpecURLs": {
+    "ED": "https://w3c.github.io/aria/",
+    "FPWD": "https://www.w3.org/TR/wai-aria-1.3",
+    "WD": "https://www.w3.org/TR/wai-aria-1.3",
     "CR": "https://w3c.github.io/aria/",
     "CRD": "https://w3c.github.io/aria/",
     "PR": "https://www.w3.org/TR/wai-aria/",
     "REC": "https://www.w3.org/TR/wai-aria/"
   },
   "accNameURLs": {
-    "CR": "https://w3c.github.io/accname/",
-    "CRD": "https://w3c.github.io/accname/",
+    "ED": "https://w3c.github.io/accname/",
+    "FPWD": "https://www.w3.org/TR/accname-1.2/",
+    "WD": "https://www.w3.org/TR/accname-1.2/",
+    "CR": "https://www.w3.org/TR/accname-1.2/",
+    "CRD": "https://www.w3.org/TR/accname-1.2/",
     "PR": "https://www.w3.org/TR/accname-1.2/",
     "REC": "https://www.w3.org/TR/accname-1.2/"
   },
+  "coreMappingURLs": {
+    "ED": "https://w3c.github.io/core-aam/",
+    "FPWD": "https://www.w3.org/TR/core-aam-1.2/",
+    "WD": "https://www.w3.org/TR/core-aam-1.2/",
+    "CR": "https://www.w3.org/TR/core-aam-1.2/",
+    "CRD": "https://www.w3.org/TR/core-aam-1.2/",
+    "PR": "https://www.w3.org/TR/core-aam-1.2/",
+    "REC": "https://www.w3.org/TR/core-aam-1.2/"
+  },
+  "dpubModURLs": {
+    "ED": "https://w3c.github.io/dpub-aria/",
+    "FPWD": "https://www.w3.org/TR/dpub-aria-1.1/",
+    "WD": "https://www.w3.org/TR/dpub-aria-1.1/",
+    "REC": "https://www.w3.org/TR/dpub-aria-1.1/"
+  },
+  "graphicsMappingModURLs": {
+    "ED": "https://w3c.github.io/graphics-aam/",
+    "FPWD": "https://www.w3.org/TR/graphics-aam-1.0/",
+    "WD": "https://www.w3.org/TR/graphics-aam-1.0/",
+    "CR": "https://www.w3.org/TR/graphics-aam-1.0/",
+    "PR": "https://www.w3.org/TR/graphics-aam-1.0/",
+    "REC": "https://www.w3.org/TR/graphics-aam-1.0/"
+  },
+  "graphicsModURLs": {
+    "ED": "https://w3c.github.io/graphics-aria/",
+    "FPWD": "https://www.w3.org/TR/graphics-aria/",
+    "WD": "https://www.w3.org/TR/graphics-aria/",
+    "REC": "https://www.w3.org/TR/graphics-aria/"
+  },
+  "htmlMappingURLs": {
+    "ED": "https://w3c.github.io/html-aam/",
+    "FPWD": "https://www.w3.org/TR/html-aam-1.0/",
+    "WD": "https://www.w3.org/TR/html-aam/",
+    "REC": "https://www.w3.org/TR/html-aam/"
+  },
   "preProcess": [
+    null,
     null
   ],
   "xref": [
@@ -188,6 +223,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "localBiblio": {
     "ACCNAME-AAM": {
       "aliasOf": "ACCNAME-AAM-1.1"
+    },
+    "Android-Accessibility-API": {
+      "title": "Android Accessibility API",
+      "href": "https://developer.android.com/guide/topics/ui/accessibility",
+      "publisher": "Google"
     },
     "ARIA-PRACTICES": {
       "aliasOf": "WAI-ARIA-PRACTICES-1.2"
@@ -230,15 +270,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "aliasOf": "WAI-ARIA-1.1"
     }
   },
-  "publishISODate": "2025-07-29T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 29 July 2025"
+  "publishISODate": "2026-04-19T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 19 April 2026"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
   <body class="h-entry" data-cite="HTML core-aam dom accname wai-aria infra"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">PDF Accessibility API Mappings 1.0</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-07-29">29 July 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-04-19">19 April 2026</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -250,12 +290,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/pdf-aam/">https://w3c.github.io/pdf-aam/</a></dd>
         <dt>History:</dt><dd>
-                    <a href="https://github.com/w3c/pdf-aam/commits/">Commit history</a>
+                    <a href="https://github.com/w3c/aria/commits/main/pdf-aam/">Commit history</a>
                   </dd>
         
-        <dt>Implementation report:</dt><dd>
-                <a href="https://w3c.github.io/test-results/core-aam-1.2/">https://w3c.github.io/test-results/core-aam-1.2/</a>
-              </dd>
+        
         
         
         
@@ -265,16 +303,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <span class="p-name fn">Zak Kinsey</span> (<a class="p-org org h-org" href="https://www.targetstream.com">Target Stream</a>)
   </dd>
         
-        <dt>Authors:</dt><dd class="editor p-author h-card vcard">
+        <dt>Authors:</dt><dd class="editor p-author h-card vcard" data-editor-id="159294">
     <span class="p-name fn">Paul Rayius</span> (<a class="p-org org h-org" href="https://www.allyant.com">Allyant</a>)
-  </dd><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Zak Kinsey</span> (<a class="p-org org h-org" href="https://www.targetstream.com">Target Stream</a>)
+  </dd><dd class="editor p-author h-card vcard" data-editor-id="160220">
+    <span class="p-name fn">Zak Kinsey</span> (<a class="p-org org h-org" href="https://www.targetstream.com">TargetStream</a>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="42459">
     <span class="p-name fn">James Craig</span> (<a class="p-org org h-org" href="https://apple.com/accessibility">Apple, Inc.</a>)
   </dd>
         <dt>Feedback:</dt><dd>
         <a href="https://github.com/w3c/pdf-aam/">GitHub w3c/pdf-aam</a>
-        (<a href="https://github.com/w3c/pdf-aam/pulls/">pull requests</a>,
+        (<a href="https://github.com/w3c/aria/pulls?q=is%3Apr+is%3Aopen+label%3A%22spec%3Apdf-aam%22">pull requests</a>,
         <a href="https://github.com/w3c/pdf-aam/issues/new/choose">new issue</a>,
         <a href="https://github.com/w3c/pdf-aam/issues/">open issues</a>)
       </dd>
@@ -287,7 +325,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="copyright">
     <a href="https://www.w3.org/policies/#copyright">Copyright</a>
     ©
-    2024-2025
+    2024-2026
     
     <a href="https://www.w3.org/">World Wide Web Consortium</a>.
     <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
@@ -298,8 +336,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <hr title="Separator for header">
   </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
+      
       <p>
-        This document describes how <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> should expose semantics of PDF content to <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>. This helps users with disabilities to obtain and interact with information using <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technologies</a>. Documenting these mappings promotes interoperable exposure of
+        This document describes how <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> should expose semantics of PDF content to <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a>. This helps users with disabilities to obtain and interact with information using <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#assistive-technology">assistive technologies</a>. Documenting these mappings promotes interoperable exposure of
         roles, states, properties, and events implemented by accessibility <abbr title="Application Programming Interfaces">APIs</abbr> and helps to ensure that this information appears in a manner consistent with author intent.
       </p>
     </section>
@@ -308,6 +347,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       publications and the latest revision of this technical report can be found
       in the
       <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> standards and drafts index</a>.</em></p>
+      <section id="status-of-this-document"><div class="header-wrapper"><h3 id="status-of-this-document-0">Status of This Document</h3><a class="self-link" href="#status-of-this-document" aria-label="Permalink for this Section"></a></div>
       <p>
         The Accessible Rich Internet Applications Working Group seeks feedback on any aspect of the specification. When submitting feedback, please consider issues in the context of the companion
         documents. To comment, <a href="https://github.com/w3c/pdf-aam/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> pdf-aam GitHub repository</a>. If this is not
@@ -342,201 +382,939 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
   </p><p>
                       This document is governed by the
-                      <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#intro_aapi"><bdi class="secno">1.1 </bdi>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a></li><li class="tocline"><a class="tocxref" href="#comparing-accessibility-apis"><bdi class="secno">1.2 </bdi>Comparing Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#accessible-names-and-descriptions"><bdi class="secno">1.2.1 </bdi>Accessible Names and Descriptions</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rfc-2119-keywords"><bdi class="secno">2.1 </bdi>RFC-2119 Keywords</a></li><li class="tocline"><a class="tocxref" href="#normative-and-informative-sections"><bdi class="secno">2.2 </bdi>Normative and Informative Sections</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3. </bdi>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#mapping"><bdi class="secno">4. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_role"><bdi class="secno">4.1 </bdi>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><bdi class="secno">4.1.1 </bdi>General rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><bdi class="secno">4.1.2 </bdi>Role Mapping Tables</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#role-map-example"><bdi class="secno">4.1.2.1 </bdi><code>example</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_state-property"><bdi class="secno">4.2 </bdi>State and Property Mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#statePropertyMappingGeneralRules"><bdi class="secno">4.2.1 </bdi>General rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_state-property_table"><bdi class="secno">4.2.2 </bdi>State and Property Mapping Tables</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#not_mapped"><bdi class="secno">4.2.2.1 </bdi>Not Mapped</a></li><li class="tocline"><a class="tocxref" href="#ariaExample"><bdi class="secno">4.2.2.2 </bdi><code>aria-example</code>=<code>true</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_additional"><bdi class="secno">4.3 </bdi>Special Processing Requiring Additional Computation</a></li><li class="tocline"><a class="tocxref" href="#mapping_actions"><bdi class="secno">4.4 </bdi>Actions</a></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">5. </bdi>Privacy considerations</a></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">6. </bdi>Security considerations</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.1 </bdi>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.2 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
-    <section id="intro" class="informative"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#intro" aria-label="Permalink for Section 1."></a></div><p><em>This section is non-normative.</em></p>
+                      <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20250818/">18 August 2025 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                    </p></section></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#status-of-this-document">Status of This Document</a></li></ol></li><li class="tocline"><a class="tocxref" href="#Introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">2. </bdi>PDF-specific Terms &amp; Definitions</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformance</a></li><li class="tocline"><a class="tocxref" href="#mapping-plsis"><bdi class="secno">4. </bdi>Mapping PDF Logical Structure Items to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"><bdi class="secno">4.1 </bdi>General Rules for Exposing PDF Semantics via HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Semantics</a></li><li class="tocline"><a class="tocxref" href="#exposing-plsis-that-do-not-directly-map-to-accessibility-apis"><bdi class="secno">4.2 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Do Not Directly Map to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a></li><li class="tocline"><a class="tocxref" href="#exposing-plsis-that-require-a-minimum-role"><bdi class="secno">4.3 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Require a Minimum Role</a></li><li class="tocline"><a class="tocxref" href="#pdf-element-role-mappings"><bdi class="secno">4.4 </bdi>PDF Element Role Mappings</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping"><bdi class="secno">5. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_role"><bdi class="secno">5.1 </bdi>Role mapping</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#roleMappingGeneralRules"><bdi class="secno">5.1.1 </bdi>General rules</a></li><li class="tocline"><a class="tocxref" href="#mapping_role_table"><bdi class="secno">5.1.2 </bdi>Role Mapping Tables</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#role-art"><bdi class="secno">5.1.2.1 </bdi><code> Art</code></a></li><li class="tocline"><a class="tocxref" href="#role-aside"><bdi class="secno">5.1.2.2 </bdi><code> Aside</code></a></li><li class="tocline"><a class="tocxref" href="#role-attribute-textdecorationtype-underline"><bdi class="secno">5.1.2.3 </bdi><code> Attribute (TextDecorationType Underline)</code></a></li><li class="tocline"><a class="tocxref" href="#role-div-has-attributes"><bdi class="secno">5.1.2.4 </bdi><code> Div (has attributes)</code></a></li><li class="tocline"><a class="tocxref" href="#role-div-no-attributes"><bdi class="secno">5.1.2.5 </bdi><code> Div (no attributes)</code></a></li><li class="tocline"><a class="tocxref" href="#role-document"><bdi class="secno">5.1.2.6 </bdi><code> Document (Child of Structure tree root)</code></a></li><li class="tocline"><a class="tocxref" href="#role-document-child"><bdi class="secno">5.1.2.7 </bdi><code> Document (Logical document within a parent document)</code></a></li><li class="tocline"><a class="tocxref" href="#role-document-fragment-block"><bdi class="secno">5.1.2.8 </bdi><code> Document Fragment as Block-Level element</code></a></li><li class="tocline"><a class="tocxref" href="#role-document-fragment-grouping"><bdi class="secno">5.1.2.9 </bdi><code> Document Fragment as Grouping</code></a></li><li class="tocline"><a class="tocxref" href="#role-h-hn"><bdi class="secno">5.1.2.10 </bdi><code> Hn (H1 thru H6)</code></a></li><li class="tocline"><a class="tocxref" href="#role-lbl"><bdi class="secno">5.1.2.11 </bdi><code> Lbl</code> (Not associated with a Form element)</a></li><li class="tocline"><a class="tocxref" href="#role-lbl-2.0"><bdi class="secno">5.1.2.12 </bdi><code> Lbl (ListNumbering, Description, New ListNumbering in PDF 2.0)</code></a></li><li class="tocline"><a class="tocxref" href="#role-lbl-forms"><bdi class="secno">5.1.2.13 </bdi><code> Lbl</code> (associated with a Form element)</a></li><li class="tocline"><a class="tocxref" href="#role-link"><bdi class="secno">5.1.2.14 </bdi><code>Link</code></a></li><li class="tocline"><a class="tocxref" href="#role-link-no-dest"><bdi class="secno">5.1.2.15 </bdi><code> Link (Does not contain an annotation OR contains an annotation that doesn't go anywhere)</code></a></li><li class="tocline"><a class="tocxref" href="#role-nonstruct"><bdi class="secno">5.1.2.16 </bdi><code> NonStruct</code></a></li><li class="tocline"><a class="tocxref" href="#role-part"><bdi class="secno">5.1.2.17 </bdi><code> Part</code></a></li><li class="tocline"><a class="tocxref" href="#role-sect"><bdi class="secno">5.1.2.18 </bdi><code> Sect</code></a></li><li class="tocline"><a class="tocxref" href="#role-sub"><bdi class="secno">5.1.2.19 </bdi><code> Sub</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping_additional"><bdi class="secno">5.2 </bdi>Special Processing Requiring Additional Computation</a></li><li class="tocline"><a class="tocxref" href="#mapping_actions"><bdi class="secno">5.3 </bdi>Actions</a></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">6. </bdi>Privacy considerations</a></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">7. </bdi>Security considerations</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.1 </bdi>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.2 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+    <section id="Introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#Introduction" aria-label="Permalink for Section 1."></a></div>
       
-      <p>TBD. Some from Core-AAM.</p>
-      <section id="intro_aapi"><div class="header-wrapper"><h3 id="x1-1-accessibility-apis"><bdi class="secno">1.1 </bdi>Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h3><a class="self-link" href="#intro_aapi" aria-label="Permalink for Section 1.1"></a></div>
-        
-        <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
-      </section>
-      <section id="comparing-accessibility-apis"><div class="header-wrapper"><h3 id="x1-2-comparing-accessibility-apis"><bdi class="secno">1.2 </bdi>Comparing Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h3><a class="self-link" href="#comparing-accessibility-apis" aria-label="Permalink for Section 1.2"></a></div>
-        
-        <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
-        <section id="accessible-names-and-descriptions"><div class="header-wrapper"><h4 id="x1-2-1-accessible-names-and-descriptions"><bdi class="secno">1.2.1 </bdi>Accessible Names and Descriptions</h4><a class="self-link" href="#accessible-names-and-descriptions" aria-label="Permalink for Section 1.2.1"></a></div>
-          
-          <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
-        </section>
-      </section>
-    </section>
-    <section id="conformance"><div class="header-wrapper"><h2 id="x2-conformance"><bdi class="secno">2. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 2."></a></div><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
-        The key word <em class="rfc2119">MAY</em> in this document
-        is to be interpreted as described in
-        <a href="https://www.rfc-editor.org/info/bcp14">BCP 14</a>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
-        when, and only when, it appears in all
-        capitals, as shown here.
+      <p>This section is non-normative.</p>
+
+      <p>
+        PDF pages do not necessarily include semantic markup, which occurs in PDF files via the elements of Tagged PDF, including PDF structure elements, structure attributes, and property lists
+        associated with marked content sequences. These features are defined in PDF’s specification, currently ISO 32000-2, in clauses 14.6 – 14.9. Tagged PDF was introduced to PDF with PDF 1.4 in
+        2001.
       </p>
-      <section id="rfc-2119-keywords"><div class="header-wrapper"><h3 id="x2-1-rfc-2119-keywords"><bdi class="secno">2.1 </bdi>RFC-2119 Keywords</h3><a class="self-link" href="#rfc-2119-keywords" aria-label="Permalink for Section 2.1"></a></div>
-        
-        <p>
-          RFC-2119 keywords are formatted in uppercase and contained in a <code>strong</code> element with <code>class="rfc2119"</code>. When the keywords shown above are used, but do not share this
-          format, they do not convey formal information in the RFC 2119 sense, and are merely explanatory, i.e., informative. As much as possible, such usages are avoided in this specification.
-        </p>
-      </section>
-      <section id="normative-and-informative-sections"><div class="header-wrapper"><h3 id="x2-2-normative-and-informative-sections"><bdi class="secno">2.2 </bdi>Normative and Informative Sections</h3><a class="self-link" href="#normative-and-informative-sections" aria-label="Permalink for Section 2.2"></a></div>
-        
-        <p>The indication whether a section is normative or non-normative (informative) applies to the entire section including sub-sections.</p>
-        <p>
-          Informative sections provide information useful to understanding the specification. Such sections may contain examples of recommended practice, but it is not required to follow such
-          recommendations in order to conform to this specification.
-        </p>
-      </section>
+
+      <p>
+        This specification defines how PDF user agents (commonly referred to as “PDF processors” in ISO standards for PDF technology) respond to and expose
+        <abbr title="PDF Logical Structure Items">PLSIs</abbr> (structure elements, structure attributes, or property lists associated with marked content, etc., as defined in ISO 32000-2 clauses
+        14.7–14.9).
+      </p>
+
+      <p>
+        Users often access PDF content using assistive technologies that rely on platform accessibility API to obtain and interact with information on a PDF page. This specification is part of the
+        following suite of accessibility API mapping specifications for content rendered by user agents:
+      </p>
+
+      <ul>
+        <li>Accessible Name and Description Computation 1.2</li>
+        <li>Core Accessibility API Mappings 1.2</li>
+        <li>HTML Accessibility API Mappings 1.0 (this specification)</li>
+        <li>MathML Accessibility API Mappings 1.0</li>
+        <li>SVG Accessibility API Mappings</li>
+      </ul>
     </section>
-    <section class="informative" id="glossary"><div class="header-wrapper"><h2 id="x3-important-terms"><bdi class="secno">3. </bdi>Important Terms</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 3."></a></div><p><em>This section is non-normative.</em></p>
+
+    <section class="informative" id="glossary"><div class="header-wrapper"><h2 id="x2-pdf-specific-terms-definitions"><bdi class="secno">2. </bdi>PDF-specific Terms &amp; Definitions</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 2."></a></div><p><em>This section is non-normative.</em></p>
       
       <div>
-        <p>TBD. Can we add only PDF-specific terms here and cross-reference the others from common dir?</p>
         <dl class="termlist">
-          <dt><dfn data-export="" id="dfn-term-1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">term 1</dfn></dt>
+          <dt><dfn id="dfn-plsi" data-export="" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">PDF Logical Structure Item (<abbr title="PDF Logical Structure Item">PLSI</abbr>)</dfn></dt>
           <dd>
-            <p>definition 1</p>
-          </dd>
-          <dt><dfn data-export="" id="dfn-term-2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">term 2</dfn></dt>
-          <dd>
-            <p>definition 2</p>
+            <p>can represent any or all of the following: Structure Element, Structure Attribute, Property list associated with marked content, or Associated File(s)</p>
           </dd>
         </dl>
       </div>
     </section>
-    <section id="mapping"><div class="header-wrapper"><h2 id="x4-mapping-wai-aria-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h2><a class="self-link" href="#mapping" aria-label="Permalink for Section 4."></a></div>
+
+    <section id="conformance"><div class="header-wrapper"><h2 id="x3-conformance"><bdi class="secno">3. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 3."></a></div><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p><p>
+        The key words <em class="rfc2119">MUST</em> and <em class="rfc2119">MUST NOT</em> in this document
+        are to be interpreted as described in
+        <a href="https://www.rfc-editor.org/info/bcp14">BCP 14</a>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>] [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8174" title="Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words">RFC8174</a></cite>]
+        when, and only when, they appear in all
+        capitals, as shown here.
+      </p>
+      <p>Normative sections provide requirements that user agents and assistive technologies <em class="rfc2119">MUST</em> follow for an implementation to conform to this specification.</p>
+      <p>
+        Non-normative (informative) sections provide information useful to understanding the specification. Such sections may contain examples of recommended practice, but it is not required to follow
+        such recommendations in order to conform to this specification.
+      </p>
+    </section>
+    <section id="mapping-plsis"><div class="header-wrapper"><h2 id="x4-mapping-pdf-logical-structure-items-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping PDF Logical Structure Items to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h2><a class="self-link" href="#mapping-plsis" aria-label="Permalink for Section 4."></a></div>
+      
+
+      <section id="general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"><div class="header-wrapper"><h3 id="x4-1-general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"><bdi class="secno">4.1 </bdi>General Rules for Exposing PDF Semantics via HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Semantics</h3><a class="self-link" href="#general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics" aria-label="Permalink for Section 4.1"></a></div>
+      <p>
+        Unless indicated otherwise, a <abbr title="PDF Logical Structure Items">PLSI</abbr> with default Accessible Rich Internet Applications (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) 1.2 semantics <em class="rfc2119">MUST</em> be exposed to the platform
+        accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to the relevant <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mappings defined in the <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite> specification. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent
+        semantics to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents <em class="rfc2119">MUST</em> expose such semantic information to the platform for the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics in the Core
+        Accessibility API Mappings 1.2.
+      </p>
+      <p>
+        In some cases, features present in a PDF may not map to a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role specified in the <cite><a data-matched-text="[[[Core-AAM-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite>. In such cases a relevant HTML Accessibility API Mapping may exist. In those cases,
+        a <abbr title="PDF Logical Structure Item">PLSI</abbr> is mapped to that HTML Accessibility API. Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> has equivalent semantics to an HTML element, but not a <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role, user agents
+        <em class="rfc2119">MUST</em> expose such semantic information to the platform for HTML accessibility <abbr title="Application Programming Interfaces">APIs</abbr> in a way that conforms to the
+        <a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a>.
+      </p>
+
+      </section><section id="exposing-plsis-that-do-not-directly-map-to-accessibility-apis"><div class="header-wrapper"><h3 id="x4-2-exposing-plsis-that-do-not-directly-map-to-accessibility-apis"><bdi class="secno">4.2 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Do Not Directly Map to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h3><a class="self-link" href="#exposing-plsis-that-do-not-directly-map-to-accessibility-apis" aria-label="Permalink for Section 4.2"></a></div>
+      <p>
+        Where a <abbr title="PDF Logical Structure Items">PLSI</abbr> does not have any default HTML or <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics, the applicable mapping for each platform accessibility API is defined by
+        this specification.
+      </p>
+
+      </section><section id="exposing-plsis-that-require-a-minimum-role"><div class="header-wrapper"><h3 id="x4-3-exposing-plsis-that-require-a-minimum-role"><bdi class="secno">4.3 </bdi>Exposing <abbr title="PDF Logical Structure Items">PLSIs</abbr> That Require a Minimum Role</h3><a class="self-link" href="#exposing-plsis-that-require-a-minimum-role" aria-label="Permalink for Section 4.3"></a></div>
+
+      <p>
+        A minimum role is the equivalent <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role a <abbr title="PDF Logical Structure Item">PLSI</abbr> will map to if the element does not have a more specific implicit role or platform role
+        mappings, e.g., a non-generic role. Minimum roles help ensure that users of assistive technologies get the best possible experience for valid <abbr title="PDF Logical Structure Items">PLSIs</abbr> where otherwise a role would not be exposed.
+      </p>
+
+      <p>A minimum role is provided when all of the following conditions are true:</p>
+      <ul>
+        <li>
+          the author has not specified a valid explicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role to the element, or the specified role is either
+          <code>none</code>, <code>presentation</code>, or generic;
+        </li>
+        <li>
+          the element either has no implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role or platform role mappings, or it has an implicit generic or
+          <code>none</code> computed role;
+        </li>
+        <li>and the author has specified attributes which require a minimum role mapping for the element.</li>
+      </ul>
+
+      <p>
+        The HTML Attribute State and Property Mappings section identifies the specific global attributes which would require an element map to a minimum role. When these conditions are met, the
+        browser <em class="rfc2119">MUST</em> expose an object using the mappings defined in CORE-AAM for the specified minimum role. If the element has multiple attributes specified which require a minimum role be returned
+        as the computed role for the element, prioritize the more specific role in the ARIA taxonomy.
+      </p>
+
+      </section><section id="pdf-element-role-mappings"><div class="header-wrapper"><h3 id="x4-4-pdf-element-role-mappings"><bdi class="secno">4.4 </bdi>PDF Element Role Mappings</h3><a class="self-link" href="#pdf-element-role-mappings" aria-label="Permalink for Section 4.4"></a></div>
+      <p>
+        <abbr title="PDF Logical Structure Items">PLSIs</abbr> with implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role semantics <em class="rfc2119">MUST</em> be mapped to platform accessibility <abbr title="Application Programming Interfaces">APIs</abbr> according to the identified <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> role mapping as
+        defined in the <a href="https://www.w3.org/TR/core-aam-1.2/">Core AAM 1.2</a> specification.
+      </p>
+      <p>
+        Where a <abbr title="PDF Logical Structure Item">PLSI</abbr> is indicated as having “No corresponding (<abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr>) role”, or is mapped to the generic role, user agents <em class="rfc2119">MUST NOT</em> expose the
+        <code>aria-roledescription</code> property value in the accessibility tree unless the element has an explicit, conforming role attribute value which
+        <a href="https://www.w3.org/TR/wai-aria-1.2/"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> 1.2</a> does not prohibit the use of <code>aria-roledescription</code>.
+      </p>
+      <p>
+        Some HTML elements expose implicit <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> roles depending on whether they have been provided an accessible name. How an element participates in the computation of its own or another
+        element’s accessible name and/or accessible description is described in the Accessible Name and Description Computation section of this document.
+      </p>
+    </section></section>
+
+    <section id="mapping"><div class="header-wrapper"><h2 id="x5-mapping-wai-aria-to-accessibility-apis"><bdi class="secno">5. </bdi>Mapping <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></h2><a class="self-link" href="#mapping" aria-label="Permalink for Section 5."></a></div>
       
       <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
 
-      <section id="mapping_role"><div class="header-wrapper"><h3 id="x4-1-role-mapping"><bdi class="secno">4.1 </bdi>Role mapping</h3><a class="self-link" href="#mapping_role" aria-label="Permalink for Section 4.1"></a></div>
+      <section id="mapping_role"><div class="header-wrapper"><h3 id="x5-1-role-mapping"><bdi class="secno">5.1 </bdi>Role mapping</h3><a class="self-link" href="#mapping_role" aria-label="Permalink for Section 5.1"></a></div>
         
         <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
 
-        <section id="roleMappingGeneralRules"><div class="header-wrapper"><h4 id="x4-1-1-general-rules"><bdi class="secno">4.1.1 </bdi>General rules</h4><a class="self-link" href="#roleMappingGeneralRules" aria-label="Permalink for Section 4.1.1"></a></div>
+        <section id="roleMappingGeneralRules"><div class="header-wrapper"><h4 id="x5-1-1-general-rules"><bdi class="secno">5.1.1 </bdi>General rules</h4><a class="self-link" href="#roleMappingGeneralRules" aria-label="Permalink for Section 5.1.1"></a></div>
           
           <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
         </section>
 
-        <section id="mapping_role_table"><div class="header-wrapper"><h4 id="x4-1-2-role-mapping-tables"><bdi class="secno">4.1.2 </bdi>Role Mapping Tables</h4><a class="self-link" href="#mapping_role_table" aria-label="Permalink for Section 4.1.2"></a></div>
+        <section id="mapping_role_table"><div class="header-wrapper"><h4 id="x5-1-2-role-mapping-tables"><bdi class="secno">5.1.2 </bdi>Role Mapping Tables</h4><a class="self-link" href="#mapping_role_table" aria-label="Permalink for Section 5.1.2"></a></div>
           
-          <section id="example"><div class="header-wrapper"><h5 id="role-map-example"><bdi class="secno">4.1.2.1 </bdi><code>example</code></h5><a class="self-link" href="#role-map-example" aria-label="Permalink for Section 4.1.2.1"></a></div>
-          <table class="data" aria-labelledby="role-map-example">
+          <section id="art"><div class="header-wrapper"><h5 id="role-art"><bdi class="secno">5.1.2.1 </bdi><code> Art</code></h5><a class="self-link" href="#role-art" aria-label="Permalink for Section 5.1.2.1"></a></div>
+          <table class="data" aria-labelledby="role-art">
             <tbody>
               <tr>
                 <th>ARIA Specification</th>
                 <td>
-                  <a class="role-reference" href="#example"><code>example</code></a>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-article">Role: <code>article</code></a>
                 </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
               </tr>
               <tr>
                 <th>MSAA + IAccessible2</th>
-                <td>
-                  <span class="property">Role: <code>ROLE_SYSTEM_EXAMPLE</code></span><br>
-                </td>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
               </tr>
               <tr>
                 <th><abbr title="User Interface Automation">UIA</abbr></th>
-                <td>
-                  <span class="property">Control Type: <code>Example</code></span><br>
-                </td>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
               </tr>
               <tr>
                 <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
-                <td>
-                  <span class="property">Role: <code>ROLE_EXAMPLE</code></span><br>
-                </td>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
               </tr>
               <tr>
                 <th>
-                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1">Note 1</a>]</sup>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">Note 1</a>]</sup>
                 </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
                 <td>
-                  <span class="property">AXRole: <code>AXxample</code></span><br>
-                  <span class="property">AXSubrole: <code></code></span><br>
+                  <span class="property">Note from PDFa: <code>This is the default handling unless a different ARIA role is present</code></span>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <div class="note" role="note" id="ftn.note1"><div role="heading" class="note-title marker" id="h-note" aria-level="5"><span>Note</span></div><div class="">
-            <p>
-              <sup>[Note 1]</sup>
-              Footnote content
-            </p>
-          </div></div>
-        </section></section>
-      </section>
-
-      <section id="mapping_state-property"><div class="header-wrapper"><h3 id="x4-2-state-and-property-mapping"><bdi class="secno">4.2 </bdi>State and Property Mapping</h3><a class="self-link" href="#mapping_state-property" aria-label="Permalink for Section 4.2"></a></div>
-        
-        <p>This section describes how to expose PDF <a class="termref informative" data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">states</a> and <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-property" class="respec-offending-element" title="Normative reference to non-normative term." id="respec-offender-normative-reference-to-non-normative-term">properties</a>.</p>
-        <section id="statePropertyMappingGeneralRules"><div class="header-wrapper"><h4 id="x4-2-1-general-rules"><bdi class="secno">4.2.1 </bdi>General rules</h4><a class="self-link" href="#statePropertyMappingGeneralRules" aria-label="Permalink for Section 4.2.1"></a></div>
           
-          <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
-        </section>
-        <section id="mapping_state-property_table"><div class="header-wrapper"><h4 id="x4-2-2-state-and-property-mapping-tables"><bdi class="secno">4.2.2 </bdi>State and Property Mapping Tables</h4><a class="self-link" href="#mapping_state-property_table" aria-label="Permalink for Section 4.2.2"></a></div>
-          
-          <section id="not_mapped"><div class="header-wrapper"><h5 id="x4-2-2-1-not-mapped"><bdi class="secno">4.2.2.1 </bdi>Not Mapped</h5><a class="self-link" href="#not_mapped" aria-label="Permalink for Section 4.2.2.1"></a></div>
-            
-            <p>
-              There are a number of occurrences in the table where a given state or property is declared "Not mapped". In some cases, this occurs for the default value of the state/property, and is
-              equivalent to its absence. User agents might find it quicker to map the value than check to see if it is the default. For computational efficiency, user agents <em class="rfc2119">MAY</em> expose the state or
-              property value if doing so is equivalent to not mapping it. These cases are marked with an asterisk.
-            </p>
-            <p>
-              In other cases, it is mandatory that the state/property not be mapped, since exposing it implies a related affordance. An example is
-              <a class="state-reference respec-offending-element" href="#aria-grabbed" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document"><code>aria-grabbed</code></a>. Its absence not only indicates that the accessible object is not grabbed, but further defines it as not grab-able. These cases are marked as "Not mapped" without an asterisk.
-            </p>
-          </section>
-
-          <section id="aria-example-true"><div class="header-wrapper"><h5 id="ariaExample"><bdi class="secno">4.2.2.2 </bdi><code>aria-example</code>=<code>true</code></h5><a class="self-link" href="#ariaExample" aria-label="Permalink for Section 4.2.2.2"></a></div>
-          <table class="data" aria-labelledby="ariaExample">
+          </section><section id="aside"><div class="header-wrapper"><h5 id="role-aside"><bdi class="secno">5.1.2.2 </bdi><code> Aside</code></h5><a class="self-link" href="#role-aside" aria-label="Permalink for Section 5.1.2.2"></a></div>
+          <table class="data" aria-labelledby="role-aside">
             <tbody>
               <tr>
                 <th>ARIA Specification</th>
                 <td>
-                  <a class="property-reference respec-offending-element" href="#aria-atomic" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-0"><code>aria-example</code></a>=<code>true</code>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-complementary">Role: <code>complementary</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-aside">Role: <code>aside (scoped to the&nbsp;body&nbsp;or&nbsp;main&nbsp;element)</code></a>
                 </td>
               </tr>
               <tr>
                 <th>MSAA + IAccessible2</th>
-                <td>
-                  <span class="property">Object Attribute: <code>example: true</code></span><br>
-                </td>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
               </tr>
               <tr>
                 <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-0">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
                 <td>
-                  <span class="property">Property: <code>example</code>: <code>true</code></span><br>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="attribute-textdecorationtype-underline"><div class="header-wrapper"><h5 id="role-attribute-textdecorationtype-underline"><bdi class="secno">5.1.2.3 </bdi><code> Attribute (TextDecorationType Underline)</code></h5><a class="self-link" href="#role-attribute-textdecorationtype-underline" aria-label="Permalink for Section 5.1.2.3"></a></div>
+          <table class="data" aria-labelledby="role-attribute-textdecorationtype-underline">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic"><code>generic </code></a>
                 </td>
               </tr>
               <tr>
-                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology-Service Provider Interface">AT-SPI</abbr></th>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-1">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
                 <td>
-                  <span class="property">Object Attribute: <code>example:true</code></span><br>
+                  <span class="property">Note from PDFa: <code>Exposed by platform specific underline text styles.</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="div-has-attributes"><div class="header-wrapper"><h5 id="role-div-has-attributes"><bdi class="secno">5.1.2.4 </bdi><code> Div (has attributes)</code></h5><a class="self-link" href="#role-div-has-attributes" aria-label="Permalink for Section 5.1.2.4"></a></div>
+          <table class="data" aria-labelledby="role-div-has-attributes">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-group">Role: <code>group</code></a>
                 </td>
               </tr>
               <tr>
-                <th><abbr title="macOS Accessibility Protocol">AX API</abbr></th>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-2">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
                 <td>
-                  <span class="property">Property: <code>AXExample</code>: <code>YES</code></span><br>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="div-no-attributes"><div class="header-wrapper"><h5 id="role-div-no-attributes"><bdi class="secno">5.1.2.5 </bdi><code> Div (no attributes)</code></h5><a class="self-link" href="#role-div-no-attributes" aria-label="Permalink for Section 5.1.2.5"></a></div>
+          <table class="data" aria-labelledby="role-div-no-attributes">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-3">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="document-child-of-structure-tree-root"><div class="header-wrapper"><h5 id="role-document"><bdi class="secno">5.1.2.6 </bdi><code> Document (Child of Structure tree root)</code></h5><a class="self-link" href="#role-document" aria-label="Permalink for Section 5.1.2.6"></a></div>
+          <table class="data" aria-labelledby="role-document">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic </code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-body">Role: <code>body</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-4">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>only processor instructions</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="document-logical-document-within-a-parent-document"><div class="header-wrapper"><h5 id="role-document-child"><bdi class="secno">5.1.2.7 </bdi><code> Document (Logical document within a parent document)</code></h5><a class="self-link" href="#role-document-child" aria-label="Permalink for Section 5.1.2.7"></a></div>
+          <table class="data" aria-labelledby="role-document-child">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic </code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-5">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa:
+                    <code>
+                      Added note - question for the group... A screen reader shouldn't "announce" when it hits the first Document tag but should it "announce" when it hits "nested" (subsequent)
+                      Document tags, to tell someone they are in a "second" document? AND... the same question applies to Document Fragment, too. If "Yes," how do we indicate that in the AAM?)
+                    </code>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="document-fragment-as-block-level-element"><div class="header-wrapper"><h5 id="role-document-fragment-block"><bdi class="secno">5.1.2.8 </bdi><code> Document Fragment as Block-Level element</code></h5><a class="self-link" href="#role-document-fragment-block" aria-label="Permalink for Section 5.1.2.8"></a></div>
+          <table class="data" aria-labelledby="role-document-fragment-block">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-6">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="document-fragment-as-grouping"><div class="header-wrapper"><h5 id="role-document-fragment-grouping"><bdi class="secno">5.1.2.9 </bdi><code> Document Fragment as Grouping</code></h5><a class="self-link" href="#role-document-fragment-grouping" aria-label="Permalink for Section 5.1.2.9"></a></div>
+          <table class="data" aria-labelledby="role-document-fragment-grouping">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-group">Role: <code>group</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-7">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="hn-h1-thru-h6"><div class="header-wrapper"><h5 id="role-h-hn"><bdi class="secno">5.1.2.10 </bdi><code> Hn (H1 thru H6)</code></h5><a class="self-link" href="#role-h-hn" aria-label="Permalink for Section 5.1.2.10"></a></div>
+          <table class="data" aria-labelledby="role-h-hn">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-heading">Role: <code>ARIA heading (role)</code></a>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#ariaLevel">Property: <code>ARIA level (property)</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-8">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>heading with the&nbsp;aria-level&nbsp;property set to the number in the element's tag name.</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="lbl-not-associated-with-a-form-element"><div class="header-wrapper"><h5 id="role-lbl"><bdi class="secno">5.1.2.11 </bdi><code> Lbl</code> (Not associated with a Form element)</h5><a class="self-link" href="#role-lbl" aria-label="Permalink for Section 5.1.2.11"></a></div>
+          <table class="data" aria-labelledby="role-lbl">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-9">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>Label types, especially for lists in UA-2, will receive further guidance at a future time.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="lbl-listnumbering-description-new-listnumbering-in-pdf-2-0"><div class="header-wrapper"><h5 id="role-lbl-2.0"><bdi class="secno">5.1.2.12 </bdi><code> Lbl (ListNumbering, Description, New ListNumbering in PDF 2.0)</code></h5><a class="self-link" href="#role-lbl-2.0" aria-label="Permalink for Section 5.1.2.12"></a></div>
+          <table class="data" aria-labelledby="role-lbl-2.0">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-term">Role: <code>term </code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-dt">Role: <code>dt</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-10">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code> Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping - BUT - "computed role" may change</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="lbl-associated-with-a-form-element"><div class="header-wrapper"><h5 id="role-lbl-forms"><bdi class="secno">5.1.2.13 </bdi><code> Lbl</code> (associated with a Form element)</h5><a class="self-link" href="#role-lbl-forms" aria-label="Permalink for Section 5.1.2.13"></a></div>
+          <table class="data" aria-labelledby="role-lbl-forms">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>No corresponding role</td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-label">Role: <code>label</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use HTML-AAM mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use HTML-AAM mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use HTML-AAM mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-11">Note 1</a>]</sup>
+                </th>
+                <td>Use HTML-AAM mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property"><code></code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="link"><div class="header-wrapper"><h5 id="role-link"><bdi class="secno">5.1.2.14 </bdi><code>Link</code></h5><a class="self-link" href="#role-link" aria-label="Permalink for Section 5.1.2.14"></a></div>
+          <table class="data" aria-labelledby="role-link">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-link">Role: <code>link</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-a">Role: <code>a&nbsp;(represents a&nbsp;hyperlink)</code></a>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-area ">Role: <code>area&nbsp;(represents a&nbsp;hyperlink)</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-12">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>both "a" and "area" point to "link" in ARIA and say to use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="link-does-not-contain-an-annotation-or-contains-an-annotation-that-doesn-t-go-anywhere"><div class="header-wrapper"><h5 id="role-link-no-dest"><bdi class="secno">5.1.2.15 </bdi><code> Link (Does not contain an annotation OR contains an annotation that doesn't go anywhere)</code></h5><a class="self-link" href="#role-link-no-dest" aria-label="Permalink for Section 5.1.2.15"></a></div>
+          <table class="data" aria-labelledby="role-link-no-dest">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic"><code>generic </code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/#el-a">Role: <code>a&nbsp;(represents a&nbsp;hyperlink)</code></a>
+                  <a class="property respec-offending-element" href="#el-area " title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-13">Role: <code>area&nbsp;(represents a&nbsp;hyperlink)</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-14">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="nonstruct"><div class="header-wrapper"><h5 id="role-nonstruct"><bdi class="secno">5.1.2.16 </bdi><code> NonStruct</code></h5><a class="self-link" href="#role-nonstruct" aria-label="Permalink for Section 5.1.2.16"></a></div>
+          <table class="data" aria-labelledby="role-nonstruct">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-15">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="part"><div class="header-wrapper"><h5 id="role-part"><bdi class="secno">5.1.2.17 </bdi><code> Part</code></h5><a class="self-link" href="#role-part" aria-label="Permalink for Section 5.1.2.17"></a></div>
+          <table class="data" aria-labelledby="role-part">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-article">Role: <code>article</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-16">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="sect"><div class="header-wrapper"><h5 id="role-sect"><bdi class="secno">5.1.2.18 </bdi><code> Sect</code></h5><a class="self-link" href="#role-sect" aria-label="Permalink for Section 5.1.2.18"></a></div>
+          <table class="data" aria-labelledby="role-sect">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/role-map-region"> Role: <code>region IF there is an accessible name. Otherwise use generic</code> </a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>
+                  <a class="html-mapping" href="https://w3c.github.io/html-aam/el-section">Role: <code>section</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-17">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>To calculate the "accessible name": The first Hn descendant that is not a descendant of another Sect element provides the accessible name.</code></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </section><section id="sub"><div class="header-wrapper"><h5 id="role-sub"><bdi class="secno">5.1.2.19 </bdi><code> Sub</code></h5><a class="self-link" href="#role-sub" aria-label="Permalink for Section 5.1.2.19"></a></div>
+          <table class="data" aria-labelledby="role-sub">
+            <tbody>
+              <tr>
+                <th>ARIA Specification</th>
+                <td>
+                  <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-generic">Role: <code>generic</code></a>
+                </td>
+              </tr>
+              <tr>
+                <th>Analogous HTML Element</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>MSAA + IAccessible2</th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="User Interface Automation">UIA</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Accessibility Toolkit">ATK</abbr>/<abbr title="Assistive Technology - Service Provider Interface">AT-SPI</abbr></th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th>
+                  <abbr title="macOS Accessibility Protocol">AX API</abbr><sup>[<a href="#ftn.note1" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-18">Note 1</a>]</sup>
+                </th>
+                <td>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</td>
+              </tr>
+              <tr>
+                <th><abbr title="Notes">Notes:</abbr></th>
+                <td>
+                  <span class="property">Note from PDFa: <code>Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</code></span>
                 </td>
               </tr>
             </tbody>
           </table>
         </section></section>
       </section>
-      <section id="mapping_additional"><div class="header-wrapper"><h3 id="x4-3-special-processing-requiring-additional-computation"><bdi class="secno">4.3 </bdi>Special Processing Requiring Additional Computation</h3><a class="self-link" href="#mapping_additional" aria-label="Permalink for Section 4.3"></a></div>
+      <section id="mapping_additional"><div class="header-wrapper"><h3 id="x5-2-special-processing-requiring-additional-computation"><bdi class="secno">5.2 </bdi>Special Processing Requiring Additional Computation</h3><a class="self-link" href="#mapping_additional" aria-label="Permalink for Section 5.2"></a></div>
         
         <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
       </section>
-      <section id="mapping_actions"><div class="header-wrapper"><h3 id="x4-4-actions"><bdi class="secno">4.4 </bdi>Actions</h3><a class="self-link" href="#mapping_actions" aria-label="Permalink for Section 4.4"></a></div>
+      <section id="mapping_actions"><div class="header-wrapper"><h3 id="x5-3-actions"><bdi class="secno">5.3 </bdi>Actions</h3><a class="self-link" href="#mapping_actions" aria-label="Permalink for Section 5.3"></a></div>
         
         <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
       </section>
     </section>
 
-    <section id="privacy-considerations"><div class="header-wrapper"><h2 id="x5-privacy-considerations"><bdi class="secno">5. </bdi>Privacy considerations</h2><a class="self-link" href="#privacy-considerations" aria-label="Permalink for Section 5."></a></div>
+    <section id="privacy-considerations"><div class="header-wrapper"><h2 id="x6-privacy-considerations"><bdi class="secno">6. </bdi>Privacy considerations</h2><a class="self-link" href="#privacy-considerations" aria-label="Permalink for Section 6."></a></div>
       
       <p>TBD. Should we duplicate or cross-reference this content from the corresponding Core-AAM section?</p>
     </section>
-    <section id="security-considerations"><div class="header-wrapper"><h2 id="x6-security-considerations"><bdi class="secno">6. </bdi>Security considerations</h2><a class="self-link" href="#security-considerations" aria-label="Permalink for Section 6."></a></div>
+    <section id="security-considerations"><div class="header-wrapper"><h2 id="x7-security-considerations"><bdi class="secno">7. </bdi>Security considerations</h2><a class="self-link" href="#security-considerations" aria-label="Permalink for Section 7."></a></div>
       
       <p>This specification introduces no new security considerations.</p>
     </section>
@@ -548,7 +1326,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <section class="appendix informative section" id="acknowledgements"><div class="header-wrapper"><h2 id="b-acknowledgments"><bdi class="secno">B. </bdi>Acknowledgments</h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix B."></a></div><p><em>This section is non-normative.</em></p>
       
       <p>The following people contributed to the development of this document.</p>
-      <ul id="gh-contributors"><li><a href="https://github.com/daniel-montalvo">Daniel Montalvo</a></li><li><a href="https://github.com/plehegar">Philippe Le Hegaret</a></li></ul>
+      <ul id="gh-contributors"><li><a href="https://github.com/daniel-montalvo">Daniel Montalvo</a></li><li><a href="https://github.com/plehegar">Philippe Le Hegaret</a></li><li><a href="https://github.com/zakkinsey">TST_Zak</a></li></ul>
       <section class="section" id="ack_group"><div class="header-wrapper"><h3 id="b-1-participants-active-in-the-aria-wg-at-the-time-of-publication"><bdi class="secno">B.1 </bdi>Participants active in the ARIA WG at the time of publication</h3><a class="self-link" href="#ack_group" aria-label="Permalink for Appendix B.1"></a></div>
 	
 	<ul>
@@ -659,7 +1437,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="c-references"><bdi class="secno">C. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix C."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="c-1-normative-references"><bdi class="secno">C.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix C.1"></a></div>
     
-    <dl class="bibliography"><dt id="bib-rfc2119">[RFC2119]</dt><dd>
+    <dl class="bibliography"><dt id="bib-core-aam-1.2">[Core-AAM-1.2]</dt><dd>
+      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Cynthia Shelly.  W3C. 10 April 2026. CRD. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
+    </dd><dt id="bib-rfc2119">[RFC2119]</dt><dd>
       <a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>
     </dd><dt id="bib-rfc8174">[RFC8174]</dt><dd>
       <a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>
@@ -673,20 +1453,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-term-1" aria-label="Links in this document to definition: term 1">
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-plsi" aria-label="Links in this document to definition: PDF Logical Structure Item (PLSI)">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#dfn-term-1" aria-label="Permalink for definition: term 1. Activate to close this dialog.">Permalink</a>
-        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-term-2" aria-label="Links in this document to definition: term 2">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-term-2" aria-label="Permalink for definition: term 2. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-plsi" aria-label="Permalink for definition: PDF Logical Structure Item (PLSI). Activate to close this dialog.">Permalink</a>
         <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
